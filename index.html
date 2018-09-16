@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>KanyeRest</title>
+    
+    <style type ="text/css">
+        
+        body{
+            background: #d32a17;
+        }
+        .whole{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30vh;
+            
+        }
+        .clock{
+            color: #e0c22a;
+            font-size: 80px;
+            border: 5px solid #e0c22a; 
+        }
+        .head{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Helvetica";
+        }
+        .Or{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Arial Black";
+        }
+        .alarmtime{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #e0c22a;
+        }
+        .cool{
+            height: 20px;
+        }
+    </style>
+    <header class = "head">
+        <h1>Don't Get Kanye Messed. Get Out of Your Kanye Nest.</h1>
+  </header>
+    <header class = "Or">
+        <h1>Or Else.</h1>
+    </header>
+</head>
+<body>
+    <div class= "whole">
+    <div id="clockshow" class="clock">
+    
+    </div>
+  <script type="text/javascript">
+      function Timefunc(){
+          var date = new Date();
+          var seconds = date.getSeconds();
+          var minutes = date.getMinutes();
+          var hours = date.getHours();
+
+          
+          if(minutes < 10){
+              minutes = "0" + minutes;
+          }
+          if(seconds < 10){
+            seconds = "0" + seconds;
+          }
+          var daypart;
+          
+          if(hours>12){
+              daypart = "PM";
+          }
+          else{
+              daypart = "AM";
+          }
+          
+          
+          document.getElementById("clockshow").innerText = hours%12 +":" + minutes + ":" + seconds +" " +daypart;
+          document.getElementById("clockshow").textContent = hours%12 +":" + minutes + ":" + seconds +" " +daypart;
+            setTimeout(Timefunc, 1000);
+          
+      }
+      Timefunc();
+      
+      var hourclick;
+      var minuteclick;
+      
+      button.onclick = function(){
+      };
+      
+    </script>
+        </div>
+    <div class = "alarmtime">
+           <form id="hour"><input type = "text" size = "5" class = "cool"></form>
+        <h1>:</h1>
+        <form id="minute"><input type = "text" size = "5" class = "cool"></form>
+        <button onclick = "alarminit(this);" id = "setalarm">
+        Set Alarm    
+        </button>
+        <script>
+        function alarminit(){
+            var hourclick = document.getElementById('hour').valueAsNumber;
+            var minuteclick = document.getElementById('minute').valueAsNumber; 
+        }
+        function alarmoff(){
+        if(date.getMinutes() == minuteclick && date.getHours() == hourclick){
+            //alarm goes off
+            window.location.href = "alarm.html";
+            }
+        
+            setTimeout(alarmtime, 1000);
+        }
+            alarmoff();
+        </script>
+        
+    </div>
+    <a href ="alarm.html">shortcut to alarm</a>
+</body>
+
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>KanyeRest</title>
+    
+    <style type ="text/css">
+        
+        body{
+            background: #d32a17;
+        }
+        .head{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Helvetica";
+        }
+        .Or{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Helvetica";
+        }
+        h1.piece{
+            color: #e0c22a;
+            font-size: 80px;
+            border: 5px solid #e0c22a; 
+        }
+        .dollars{
+            color: #e0c22a;
+            
+        }
+        .button {
+   border-top: 1px solid #96d1f8;
+   background: #d2d665;
+   background: -webkit-gradient(linear, left top, left bottom, from(#b5ae21), to(#d2d665));
+   background: -webkit-linear-gradient(top, #b5ae21, #d2d665);
+   background: -moz-linear-gradient(top, #b5ae21, #d2d665);
+   background: -ms-linear-gradient(top, #b5ae21, #d2d665);
+   background: -o-linear-gradient(top, #b5ae21, #d2d665);
+   padding: 15.5px 31px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 18px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+    </style>
+    <header class = "head">
+        <h1>Don't Get Kanye Messed. Get Out of Your Kanye Nest.</h1>
+  </header>
+</head>
+<body>
+   <iframe src="Good Morning (320  kbps).mp3" allow="autoplay" style="display:none" id="iframeAudio">
+</iframe> 
+    <h1 class = "piece">You have <span id="countdown">300 </span> seconds left, do your Kanye Best!</h1> 
+    <h2>Honestly, you better do your Kanye Best, to be honestly these consequences are no joke, Wake up Mr. West! You don't have 30 Hours! You also definitely don't want a Late Registration! You would definitely be So Appalled that you may turn into a Runaway, then it All Falls Down! Okay, I'll stop now. </h2>
+    <script type="text/javascript">
+   var timeleft = 300;
+    var downloadTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdown").textContent = timeleft;
+    if(timeleft <= 0)
+        clearInterval(downloadTimer);
+    },1000);
+       
+    if(timeleft ==0){
+        window.location.href = "punish.html";
+    }
+        
+        </script>
+    
+    <div class = "question">
+        <h1 class= "dollars">What is $250 Canadian Dollars in Indian Rupees?</h1>
+        <a href="index.html" class="button" style="top: 224px; left: 169px;">13,816.94</a>
+        <a href="punish.html" class="button" style="top:224px; left: 169px;">23,816.94</a>
+        
+    </div>
+    <br>
+    <a href ="punish.html">ok to skip to the punishment</a>
+    
+    
+    </body>
+
+
+</html>
